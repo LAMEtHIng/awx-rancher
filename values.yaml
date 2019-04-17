@@ -28,8 +28,12 @@ deployment:
 
 service:
   type: NodePort
-  internalPort: 8052
-  nodePort: 30080
+  ports:
+  - name: awxweb
+    port: 8052
+    targetPort: 8052
+    nodePort: 30080
+    protocol: TCP
 ingress:
   enabled: false
   # Used to create an Ingress record.
