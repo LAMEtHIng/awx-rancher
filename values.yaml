@@ -29,6 +29,7 @@ deployment:
 service:
   type: NodePort
   port: 8052
+  internalPort: 8052
   nodePort: ""
 ingress:
   enabled: false
