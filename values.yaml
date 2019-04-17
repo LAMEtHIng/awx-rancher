@@ -29,8 +29,7 @@ deployment:
 service:
   type: NodePort
   internalPort: 8052
-  externalPort: 8052
-
+  nodePort:
 ingress:
   enabled: false
   # Used to create an Ingress record.
