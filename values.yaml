@@ -27,6 +27,7 @@ deployment:
   annotations: {}
 
 service:
+  type: NodePort
   internalPort: 8052
   externalPort: 8052
 
