@@ -22,15 +22,19 @@ awx_secret_key: awxsecret
 default_admin_user: admin
 default_admin_password: password
 
+spec:
+  ports:
+  - protocol: TCP
+    port: 8052
+
+
 
 deployment:
   annotations: {}
 
 service:
   type: NodePort
-  port: 8052
-  internalPort: 8052
-  nodePort: ""
+ 
 ingress:
   enabled: false
   # Used to create an Ingress record
