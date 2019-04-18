@@ -34,7 +34,9 @@ deployment:
 
 service:
   type: NodePort
- 
+  ports:
+  - protocol: TCP
+    port: 8052
 ingress:
   enabled: false
   # Used to create an Ingress record
